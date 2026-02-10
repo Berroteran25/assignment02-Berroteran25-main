@@ -77,17 +77,17 @@ string convertDigits(int digit)
         default: return "error";
     }
 }
-double calculator(double operand1, double operand2, char operation)
+double calculator(double a, char op, double b)
 {
-    switch (operation) 
+    switch (op) 
     {
-        case '+': return operand1 + operand2;
-        case '-': return operand1 - operand2;
-        case '*': return operand1 * operand2;
+        case '+': return a + b;
+        case '-': return a - b;
+        case '*': return a * b;
         case '/': 
-            if (operand2 != 0) 
+            if (b != 0) 
             {
-                return operand1 / operand2;
+                return a / b;
             } 
             else 
             {

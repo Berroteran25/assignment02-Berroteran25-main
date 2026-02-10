@@ -9,7 +9,7 @@ using std::string;
 // All necessary information is provided in the assignment description.
 int min(const vector<int>& vec);
 string convertDigits(int digit);
-double calculator(double operand1, double operand2, char operation);
+double calculator(double a, char op, double b);
 int countWords(const string& s);
 bool isPalindrome(const string& s);
 void reverseList(vector<int>& vec);
