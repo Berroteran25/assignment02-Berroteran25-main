@@ -152,7 +152,7 @@ void reverseList(vector<int>& vec)
         --j;    
     }
 }
-void capitalizeSentences(string& sentence) 
+void capitalizeSentence(string& sentence) 
 {
     if (sentence.empty()) return;
     sentence[0] = toUpperChar(sentence[0]);

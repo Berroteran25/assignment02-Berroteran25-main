@@ -13,7 +13,7 @@ double calculator(double a, char op, double b);
 int countWords(const string& s);
 bool isPalindrome(const string& s);
 void reverseList(vector<int>& vec);
-void capitalizeSentences(string& sentence);
+void capitalizeSentence(string& sentence);
 vector<string> splitString(const string& s, char delimiter);
 vector<string> uniqueWords (const string& s);
 int mode (const vector<int>& vec);
