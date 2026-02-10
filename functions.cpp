@@ -74,7 +74,7 @@ string convertDigits(int digit)
         case 7: return "seven";
         case 8: return "eight";
         case 9: return "nine";
-        default: return "invalid";
+        default: return "error";
     }
 }
 double calculator(double operand1, double operand2, char operation)
