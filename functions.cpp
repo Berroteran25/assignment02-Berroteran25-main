@@ -278,28 +278,25 @@ int playCraps(const vector<int>& rolls)
 void printPoly(const vector<double>& coeffs) 
 {
     cout << "P(x) = ";
-    bool printed = false;
+    bool first = false;
     int degree = static_cast<int>(coeffs.size()) - 1;
     for (size_t i = 0; i < coeffs.size(); ++i)
     {
         double c = coeffs[i];
         int power = degree - static_cast<int>(i);
         if (c == 0.0) continue;
-        if (printed) cout << "+";
+        if (!first) cout << " + ";
         cout << "()" << c << ")";
-        if (power >= 2) 
+        if (power >= 1) 
         {
-            cout << "x^" << power;
+            cout << "*x" << power;
+            if (power >= 2) cout << "^" << power;
         }
-        else if (power == 1) 
-        {
-            cout << "x";
-        }
-        printed = true;
+        first = false;
     }
-    if (!printed) 
+    if (first) 
     {
-        cout << "0";
+        cout << "(0)";
     }
 }
 
